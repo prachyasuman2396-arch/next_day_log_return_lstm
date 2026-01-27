@@ -56,21 +56,24 @@ Everything is served from **one FastAPI application**, avoiding CORS issues and 
 next_day_log_return_lstm/
 │
 ├── app/
-│ ├── main.py # FastAPI app (API + UI)
-│ ├── data_utils.py # Data loading & preprocessing
-│ ├── model.py # LSTM model loading & inference
-│ ├── static/ # CSS & JavaScript
-│ │ ├── style.css
-│ │ └── script.js
-│ └── templates/ # HTML templates
-│ └── index.html
+│   ├── main.py              # FastAPI app (serves API + UI)
+│   ├── data_utils.py        # Data loading & preprocessing
+│   ├── model.py             # LSTM model loading & inference
+│   │
+│   ├── static/              # Static frontend assets
+│   │   ├── style.css        # UI styling
+│   │   └── script.js        # Frontend logic (API calls)
+│   │
+│   └── templates/           # HTML templates
+│       └── index.html       # Main web UI
 │
 ├── models/
-│ └── lstm_model.keras # Trained LSTM model
+│   └── lstm_model.keras     # Trained LSTM model (saved)
 │
-├── requirements.txt
-├── README.md
-└── .gitignore
+├── requirements.txt         # Python dependencies
+├── README.md                # Project documentation
+└── .gitignore               # Ignored files & folders
+
 
 
 ---
