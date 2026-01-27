@@ -75,9 +75,6 @@ next_day_log_return_lstm/
 └── .gitignore               # Ignored files & folders
 
 
-
----
-
 ## ⚙️ Tech Stack
 
 ### Machine Learning
