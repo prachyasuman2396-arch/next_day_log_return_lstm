@@ -53,6 +53,7 @@ Everything is served from **one FastAPI application**, avoiding CORS issues and 
 
 ## 📂 Project Structure
 
+```text
 next_day_log_return_lstm/
 │
 ├── app/
@@ -73,7 +74,7 @@ next_day_log_return_lstm/
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Project documentation
 └── .gitignore               # Ignored files & folders
-
+```
 
 ## ⚙️ Tech Stack
 
