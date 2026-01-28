@@ -5,10 +5,10 @@ The project is deployed as a **public web app** using **FastAPI** and **Render**
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
-🔗 **Public URL:**  
-👉 *https://next-day-log-return-lstm.onrender.com*
+**Public URL:**  
+ *https://next-day-log-return-lstm.onrender.com*
 
 Users can:
 - Enter a stock ticker (e.g., `AAPL`)
@@ -17,7 +17,7 @@ Users can:
 
 ---
 
-## 🧠 Project Overview
+##  Project Overview
 
 Financial time series are noisy and non-linear.  
 This project uses an **LSTM neural network** trained on **log returns** of historical stock prices to model temporal dependencies and make short-horizon predictions.
@@ -34,7 +34,7 @@ This project uses an **LSTM neural network** trained on **log returns** of histo
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 User (Browser)
 ↓
@@ -76,7 +76,7 @@ next_day_log_return_lstm/
 └── .gitignore               # Ignored files & folders
 ```
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 ### Machine Learning
 - TensorFlow / Keras
@@ -98,7 +98,7 @@ next_day_log_return_lstm/
 
 ---
 
-## 🔬 Model Details
+##  Model Details
 
 - **Input:** Sliding window of past log returns
 - **Target:** Next-day log return
@@ -112,32 +112,32 @@ The deployed application performs **inference only**, ensuring fast and stable p
 
 ---
 
-## 🧪 Running Locally
+##  Running Locally
 
-### 1️⃣ Clone the repository
+### 1️ Clone the repository
 ```bash
 git clone <your-repo-url>
 cd next_day_log_return_lstm
 ```
-### 2️⃣ Create and activate virtual environment
+### 2️ Create and activate virtual environment
 ```bash
 python -m venv venv
 source venv/bin/activate   # macOS/Linux
 ```
-### 3️⃣ Install dependencies
+### 3️ Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-### 4️⃣ Start the server
+### 4️ Start the server
 ```bash
 uvicorn app.main:app --reload
 ```
-### 5️⃣ Open in browser
+### 5️ Open in browser
 ```bash
 http://127.0.0.1:8000
 ```
 
-🌐 API Usage
+ API Usage
 Predict next-day log return
 
 GET /predict?ticker=AAPL
@@ -149,14 +149,14 @@ Example response
 }
 
 
-📌 Notes & Limitations
+ Notes & Limitations
 Predictions are not financial advice
 Daily stock returns are close to white noise
 Model performance is limited by market efficiency
 CPU-only inference (no GPU)
 This project is meant for educational and portfolio purposes.
 
-🧠 What This Project Demonstrates
+ What This Project Demonstrates
 End-to-end ML system design
 Time-series preprocessing best practices
 Neural network deployment (LSTM)
@@ -164,7 +164,7 @@ FastAPI-based model serving
 Full-stack integration
 Cloud deployment (Render)
 
-✨ Future Improvements
+ Future Improvements
 Confidence intervals / uncertainty estimation
 Support for multiple horizons
 Ticker validation & error handling
